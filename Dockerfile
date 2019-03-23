@@ -20,7 +20,7 @@ ENV NODE_ID=0                     \
     MYSQL_DB=shadowsocks          \
     REDIRECT=github.com           \
     FAST_OPEN=false               \
-    MEDIA_UNLOCK_DNS=''
+    MEDIA_UNLOCK_DNS=empty
 
 COPY . /root/shadowsocks
 WORKDIR /root/shadowsocks
