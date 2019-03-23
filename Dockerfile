@@ -19,7 +19,8 @@ ENV NODE_ID=0                     \
     MYSQL_PASS=ss                 \
     MYSQL_DB=shadowsocks          \
     REDIRECT=github.com           \
-    FAST_OPEN=false
+    FAST_OPEN=false               \
+    MEDIA_UNLOCK_DNS=''
 
 COPY . /root/shadowsocks
 WORKDIR /root/shadowsocks
