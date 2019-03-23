@@ -449,7 +449,7 @@ class DNSResolver(object):
         for server in self._servers:
             logging.debug('resolving %s with type %d using server %s',
                           hostname, qtype, server)
-            if get_config().MEDIA_UNLOCK_DNS != 'empty' and ("netflix" in hostname or "nflx" in hostname):
+            if get_config().MEDIA_UNLOCK_DNS != 'empty' and ("netflix" in str(hostname) or "nflx" in str(hostname)):
                 self._sock.sendto(req, (get_config().MEDIA_UNLOCK_DNS, 53))
             else:
                 self._sock.sendto(req, server)
