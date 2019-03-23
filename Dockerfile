@@ -57,4 +57,5 @@ RUN  apk --no-cache add \
 CMD envsubst < apiconfig.py > userapiconfig.py && \
     envsubst < config.json > user-config.json  && \
     echo -e "${DNS_1}\n${DNS_2}\n" > dns.conf  && \
-    python server.py
+    python server.py    \
+    cat userapiconfig.py
