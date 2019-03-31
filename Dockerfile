@@ -20,7 +20,10 @@ ENV NODE_ID=0                     \
     MYSQL_DB=shadowsocks          \
     REDIRECT=github.com           \
     FAST_OPEN=false               \
-    MEDIA_UNLOCK_DNS=empty
+    NETFLIX_DNS=empty             \
+    HBO_DNS=empty             \
+    BBC_DNS=empty             \
+    HULU_DNS=empty
 
 COPY . /root/shadowsocks
 WORKDIR /root/shadowsocks
